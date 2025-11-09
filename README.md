@@ -58,21 +58,6 @@ docker run comparador-tasas USD EUR 200 o en DOP
 docker-compose up
 
 
-```
-
-### Probar la imagen ya construida
-Si alguien mas construyo la imagen y quieres probarla:
-```bash
-# descargar la imagen (si esta en un registro)
-docker pull usuario/comparador-tasas:latest
-
-# ejecutar
-docker run usuario/comparador-tasas:latest
-
-# ver los logs mientras corre
-docker run -it usuario/comparador-tasas:latest
-```
-
 
 ## ejecutar las pruebas
 ```bash
