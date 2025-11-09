@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  comparador:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: comparador-tasas-cambio
+    environment:
+      - API1_URL=https://api1.ejemplo.com
+      - API1_KEY=key1
+      - API1_TIMEOUT=5
+      - API2_URL=https://api2.ejemplo.com
+      - API2_KEY=key2
+      - API2_TIMEOUT=5
+      - API3_URL=https://api3.ejemplo.com
+      - API3_KEY=key3
+      - API3_TIMEOUT=5
+    # para poder ejecutar el comparador usar
+    # docker-compose run comparador USD DOP 500
